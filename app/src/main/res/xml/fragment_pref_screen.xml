@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<SwitchPreference
+    android:key="key1"
+    android:title="key1"
+    android:defaultValue="true"/>
+    <Preference
+        android:key="key2"
+        android:title="key2"
+        android:summary="about key2"/>
+</PreferenceScreen>

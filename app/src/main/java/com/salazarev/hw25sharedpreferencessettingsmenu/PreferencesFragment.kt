@@ -1,14 +1,23 @@
 package com.salazarev.hw25sharedpreferencessettingsmenu
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.preference.PreferenceFragmentCompat
-import com.salazarev.hw25sharedpreferencessettingsmenu.databinding.FragmentMainBinding
 
-class PreferencesFragment: PreferenceFragmentCompat() {
+class PreferencesFragment : PreferenceFragmentCompat() {
+    companion object {
+        private const val ARG_ROOT = "root"
+
+        fun newInstance(rootKey: String): PreferencesFragment{
+            val args = Bundle()
+            args.putString(ARG_ROOT,rootKey)
+            val fragment =  PreferencesFragment()
+            fragment.arguments = args
+            return fragment
+        }
+    }
+
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
-       setPreferencesFromResource(R.xml.fragment_pref_screen, rootKey)
+        val root = arguments?.getString(ARG_ROOT) ?: rootKey
+        setPreferencesFromResource(R.xml.fragment_pref_screen, root)
     }
 }

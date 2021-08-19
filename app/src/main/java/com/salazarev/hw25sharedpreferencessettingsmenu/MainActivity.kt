@@ -2,8 +2,6 @@ package com.salazarev.hw25sharedpreferencessettingsmenu
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
 import com.salazarev.hw25sharedpreferencessettingsmenu.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -15,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         supportFragmentManager
             .beginTransaction()
-            .replace(R.id.fragment_layout_place, MainFragment())
+            .replace(R.id.container_layout_place, MainFragment())
             .addToBackStack(null)
             .commit()
     }

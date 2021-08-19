@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-<SwitchPreference
-    android:key="key1"
-    android:title="key1"
-    android:defaultValue="true"/>
-    <Preference
-        android:key="key2"
-        android:title="key2"
-        android:summary="about key2"/>
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/pref_key_keep_calm_and"
+        android:title="@string/british_footprint" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:disableDependentsState="false"
+        android:key="@string/pref_key_show_action"
+        app:title="Показать действия:" />
+    <PreferenceCategory app:title="Действия:">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:dependency="@string/pref_key_show_action"
+            android:key="@string/pref_key_do_homework_action"
+            android:title="@string/delayte_domashki" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:dependency="@string/pref_key_show_action"
+            android:key="@string/pref_key_write_project_action"
+            android:title="@string/pishite_proect" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:dependency="@string/pref_key_show_action"
+            android:key="@string/pref_key_keep_moving_interview"
+            android:title="@string/prohodite_sobes" />
+    </PreferenceCategory>
 </PreferenceScreen>

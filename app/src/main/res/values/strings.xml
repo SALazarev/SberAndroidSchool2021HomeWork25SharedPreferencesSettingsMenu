@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">HomeWork25SharedPreferencesSettingsMenu</string>
+    <string name="keep">KEEP</string>
+    <string name="calm">CALM</string>
+    <string name="and">AND</string>
+    <string name="prohodite_sobes">PROHODITE SOBES</string>
+    <string name="pishite_proect">PISHITE PROECT</string>
+    <string name="delayte_domashki">DELAYTE DOMASHKI</string>
+    <string name="british_footprint">Show \"KEEP CALM AND\"</string>
+    <string name="pref_key_keep_calm_and">pref_key_keep_calm_and</string>
+    <string name="pref_key_show_action">pref_key_show_action</string>
+    <string name="pref_key_do_homework_action">pref_key_do_homework_action</string>
+    <string name="pref_key_write_project_action">pref_key_write_project_action</string>
+    <string name="pref_key_keep_moving_interview">pref_key_keep_moving_interview</string>
 </resources>

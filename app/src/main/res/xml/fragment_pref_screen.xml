@@ -9,7 +9,7 @@
         android:defaultValue="true"
         android:disableDependentsState="false"
         android:key="@string/pref_key_show_action"
-        app:title="Показать действия:" />
+        android:title="Показать действия:" />
     <PreferenceCategory app:title="Действия:">
         <SwitchPreference
             android:defaultValue="true"
@@ -26,5 +26,9 @@
             android:dependency="@string/pref_key_show_action"
             android:key="@string/pref_key_keep_moving_interview"
             android:title="@string/prohodite_sobes" />
+        <Preference
+            android:fragment="com.salazarev.hw25sharedpreferencessettingsmenu.SecondPrefFragment"
+            android:key="@string/pref_key_next_settings_screen"
+            android:title="Следующий экран настроек" />
     </PreferenceCategory>
 </PreferenceScreen>

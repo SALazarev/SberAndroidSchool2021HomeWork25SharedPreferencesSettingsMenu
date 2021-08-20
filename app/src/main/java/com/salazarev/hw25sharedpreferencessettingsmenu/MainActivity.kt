@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         supportFragmentManager
             .beginTransaction()
-            .replace(R.id.container_layout_place, MainFragment())
+            .replace(R.id.container_settings, MainFragment())
             .addToBackStack(null)
             .commit()
     }
